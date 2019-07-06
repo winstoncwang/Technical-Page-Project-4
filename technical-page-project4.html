@@ -86,7 +86,7 @@
         <section id="introducing_jsx" class="main-section">
             <header><h1>Introducing JSX</h1></header>
             <p>Consider this variable declaration:</p>
-            <div>
+            <div class="code-container">
                 <pre>
                     <code>
                     <span>const</span><span class="plain text"> element =</span><span>&#60;</span><span>h1</span><span>&#62;</span><span>Hello, world!</span><span>&#60;</span><span>h1</span><span>&#62;</span>
@@ -104,6 +104,55 @@
             <p>Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both. We will come back to components in a further section, but if you’re not yet comfortable putting markup in JS, this talk might convince you otherwise.</p>
             <p>React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.</p>
             <p>With that out of the way, let’s get started!</p>
+        </section>
+        
+        <section id="embedding_expressions_in_jsx" class="main-section">
+            <header><h2>Embedding Expressions in JSX</h2></header>
+            <p>In the example below, we declare a variable called <code>name</code> and then use it inside JSX by wrapping it in curly braces:</p>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>const</span> name = <span>'Josh Perez';</span>
+                        <span>const</span> element = <span>&#60;</span><span>h1</span><span>&#62;</span>Hello, <span>{</span>name<span>}&#60;/</span><span>h1</span><span>&#62;;</span>
+                        <br>
+                        ReactDOM<span>.render</span><span>(</span>
+                          element<span>,</span>
+                          document<span>.getElementById</span><span>('root')</span>
+                        <span>);</span>
+                    </code>
+                </pre>
+            </div>
+            <p>You can put any valid JavaScript expression inside the curly braces in JSX. For example, <code>2 + 2</code>, <code>user.firstName</code>, or <code>formatName(user)</code> are all valid JavaScript expressions.</p>
+            <p>In the example below, we embed the result of calling a JavaScript function, <code>formatName(user)</code>, into an <code>&#60;h1&#62;</code> element.</p>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>function</span> <span>formatName</span><span>(</span>user<span>) {</span>
+                          <span>return</span> user<span>.</span>firstName + <span>' '</span> + user<span>.</span>lastName<span>;</span>
+                        <span>}</span>
+                          
+                        <span>const</span> user = <span>}</span>
+                            firstName<span>: 'Harper',</span>
+                            lastName<span>: 'Perez'</span>
+                        <span>};</span>
+                        <span>const</span> element = <span>(</span>
+                            <span>&#60;</span><span>h1</span><span>&#62;</span>
+                                Hello, <span>{</span><span>formatName</span><span>(</span>user<span>)}</span>!
+                            <span>&#60;/</span><span>h1</span><span>&#62;</span>
+                        <span>);</span>
+                        
+                        ReactDOM<span>.render</span><span>(</span>
+                            element<span>,</span>
+                            document<span>.getElementById</span><span>('root')</span>
+                        <span>);</span>
+                    </code>
+                </pre>
+            </div>
+            
+        </section>
+        <section id="try_it_on_codepen" class="main-section">
+            <header><h2>Try it on CodePen</h2></header>
+            <p>We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.</p>
         </section>
 
     </main>
