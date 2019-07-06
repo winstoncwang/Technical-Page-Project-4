@@ -24,3 +24,8 @@ Add content, Add userstory
 Version 0.1.4
 
 Add introducing JSX content, Modify readme.md
+
+--------------------------------------------------------------
+Version 0.1.5
+
+Add specifying children with JSX section.

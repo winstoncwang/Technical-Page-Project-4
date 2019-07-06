@@ -150,9 +150,78 @@
             </div>
             
         </section>
+        
         <section id="try_it_on_codepen" class="main-section">
             <header><h2>Try it on CodePen</h2></header>
             <p>We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.</p>
+        </section>
+        
+        <section id="jsx_is_an_expression_too" class="main-section">
+            <header><h2>JSX is an Expression Too</h2></header>
+            <p>After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.</p>
+            <p>This means that you can use JSX inside of <code>if</code> statements and <code>for</code> loops, assign it to variables, accept it as arguments, and return it from functions:</p>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>function</span> <span>getGreeting</span><span>(</span>user<span>) {</span>
+                          <span>if</span> <span>(</span>user<span>)</span> <span>{</span>
+                            <span>return</span> <span>&#60;</span><span>h1</span><span>&#62;</span>Hello, <span>{</span><span>formatName</span><span>(</span>user<span>)}</span>!<span>&#60;</span><span>h1</span><span>&#62;;</span>
+                          <span>}</span>
+                          <span>return</span> <span>&#60;</span><span>h1</span><span>&#62;</span>Hello, Stranger.<span>&#60;/</span><span>h1</span><span>&#62;;</span>
+                        <span>}</span>
+                    </code>
+                </pre>
+            </div>
+        </section>
+        
+        <section class="main-section" id="specifying_attributes_with_jsx">
+            <header><h2>Specifying Attributes with JSX</h2></header>
+            <p>You may use quotes to specify string literals as attributes:</p>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>const</span> element = <span>&#60;</span><span>div</span> <span>tabIndex</span><span>="0"&#62;&#60;/</span><span>div</span><span>&#62;;</span>
+                    </code>
+                </pre>
+            </div>
+            <p>You may also use curly braces to embed a JavaScript expression in an attribute:</p>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>const</span> element = <span>&#60;</span><span>img</span> <span>src</span><span>={</span><span>user</span><span>.</span><span>avatarUrl</span><span>}&#62;&#60;/</span><span>img</span><span>&#62;;</span>
+                    </code>
+                </pre>
+            </div>
+            <p>Don’t put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.</p>
+            <blockquote>
+                <strong>Warning:</strong>
+                <p>Since JSX is closer to JavaScript than to HTML, React DOM uses <code>camelCase</code> property naming convention instead of HTML attribute names.</p>
+                <p>For example, <code>class</code> becomes className in JSX, and <code>tabindex</code> becomes tabIndex.</p>
+            </blockquote>
+        </section>
+        
+        <section class="main-section" id="specifying_childer_with_jsx">
+            <header><h2>Specifying Children with JSX </h2></header>
+            <p>If a tag is empty, you may close it immediately with <code>&#92;&#62;</code>, like XML:</p>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>const</span> element = <span>&#60;</span><span>img</span> <span>src</span><span>={</span><span>user</span><span>.</span><span>avatarUrl</span><span>}&#62;&#60;/</span><span>img</span><span>&#62;;</span>
+                    </code>
+                </pre>
+            </div>
+            <p>JSX tags may contain children:</p>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>const</span> element = <span>(</span>
+                            <span>&#60;</span><span>div</span><span>&#62;</span><span>&#60;</span><span>h1</span><span>&#62;</span>Hello!<span>&#60;</span><span>h1</span><span>/&#62;</span>
+                            <span>&#60;</span><span>h2</span><span>&#62;</span>Good to see you here.<span>&#60;</span><span>h2</span><span>/&#62;</span>
+                            <span>&#60;</span><span>div</span><span>/&#62;</span>
+                        <span>);</span>
+                    </code>
+                </pre>
+            </div>
         </section>
 
     </main>
