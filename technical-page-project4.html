@@ -26,6 +26,26 @@
         </div>
     </header>
     
+    <nav id="nav-bar">
+        <header><h1>React Beginner Guide</h1></header>
+        <ul>
+            <li><a>Getting Started</a></li>
+            <li><a>Try React</a></li>
+            <li><a>Online Playgrounds</a></li>
+            <li><a>Add React to a Website</a></li>
+            <li><a>Create a New React App</a></li>
+            <li><a>Learn React</a></li>
+            <li><a>Introducing JSX</a></li>
+            <li><a>Why JSX?</a></li>
+            <li><a>Embedding Expressions in JSX</a></li>
+            <li><a>Try it on CodePen</a></li>
+            <li><a>JSX is an Expression Too</a></li>
+            <li><a>Specifying Attributes with JSX</a></li>
+            <li><a>Specifying Children with JSX</a></li>
+            <li><a>JSX Prevents Injection Attacks</a></li>
+        </ul>
+    </nav>
+    
     <main id="main-doc">
 
         <section id="getting_started" class="main-section">
@@ -222,6 +242,69 @@
                     </code>
                 </pre>
             </div>
+        </section>
+        
+        <section class="main-section" id="jsx_prevents_injection_attacks">
+            <header><h2>JSX Prevents Injection Attacks</h2></header>
+            <p>It is safe to embed user input in JSX:</p>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>const</span> title = response.potentiallyMaliciousInput<span>;</span>
+                        <span>// This is safe:</span>
+                        <span>const</span> element = <span>&#60;</span><span>h1</span><span>&#62;{</span>title<span>}&#60;/</span><span>h1</span><span>&#62;;</span>
+                    </code>
+                </pre>
+            </div>
+            <p>By default, React DOM escapes any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that’s not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent XSS (cross-site-scripting) attacks.
+            </p>
+        </section>
+        
+        <section class="main-section" id="jsx_reprents objects">
+            <p>Babel compiles JSX down to <code>React.createElement()</code> calls.</p>
+            <p>These two examples are identical:</p>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>const</span> element = <span>(</span>
+                            <span>&#60;</span><span>h1</span> <span>className</span><span>="greeting"&#62;</span>
+                                Hello,world!
+                            <span>&#60;/</span><span>h1</span><span>&#61;</span>
+                        <span>);</span>
+                    </code>
+                </pre>
+            </div>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>const</span> element = React<span>.createElement</span><span>(</span>
+                            <span>'h1',</span>
+                            <span>{</span>className<span>: 'greeting'},
+                            'Hello, world!'</span>
+                        <span>);</span>
+                    </code>
+                </pre>
+            </div>
+            <p><code>React.createElement()</code> performs a few checks to help you write bug-free code but essentially it creates an object like this:</p>
+            <div class="code-container">
+                <pre>
+                    <code>
+                        <span>// Note: this structure is simplified</span>
+                        <span>const</span> element = <span>{</span>
+                            type<span>: 'h1',</span>
+                            props<span>: {</span>
+                                className<span>: 'greeting',</span>
+                                children<span>: 'Hello, world!'</span>
+                            <span>}</span>
+                        <span>};</span>
+                    </code>
+                </pre>
+            </div>
+            <p>These objects are called “React elements”. You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.</p>
+            <p>We will explore rendering React elements to the DOM in the next section.</p>
+            <blockquote>
+                <strong>Tip:</strong>
+                <p>We recommend using the “Babel” language definition for your editor of choice so that both ES6 and JSX code is properly highlighted. This website uses the Oceanic Next color scheme which is compatible with it.</p></blockquote>
         </section>
 
     </main>
