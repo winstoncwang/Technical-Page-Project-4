@@ -29,3 +29,10 @@ Add introducing JSX content, Modify readme.md
 Version 0.1.5
 
 Add specifying children with JSX section.
+
+--------------------------------------------------------------
+Version 0.1.6
+
+Update nav-bar, complete content, updated userstory
+
+-------------------------------------------------------------
