@@ -36,3 +36,13 @@ Version 0.1.6
 Update nav-bar, complete content, updated userstory
 
 -------------------------------------------------------------
+Version 0.1.7
+
+Update nav-bar link
+
+--------------------------------------------------------
+Version 0.1.8
+
+Convert nav-bar to sidebar, header spaced out, content proper layout.
+
+--------------------------------------------------------

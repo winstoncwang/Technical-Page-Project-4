@@ -1,0 +1,98 @@
+html,body{
+    margin:0px;
+    padding:0px;
+}
+
+/*-------------Header section-----------------*/
+.title-header{
+    width:100%;
+    background-color:#e9b567;
+    height:80px;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.css-width{
+    width:90%;
+    height: inherit;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:calc(100%/2);
+}
+
+#search-form{
+    display:block;    
+}
+
+#feature-buttons-header{
+    width:auto;
+}
+
+#feature-buttons-header ul{
+    display:inline-flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    margin:0px;
+    padding:0px;
+    width: 100%;
+}
+
+#feature-buttons-header ul li a{
+    text-decoration: none;
+    margin:6px;
+    padding:5px;
+    color:dimgrey;
+    background-color: #61DAFB;
+    border-radius:10px;
+}
+
+/*-------------Header section-----------------*/
+/*-------------Nav Bar section-----------------*/
+#nav-bar ul li a{
+    text-decoration: none;
+}
+#nav-bar ul li{
+    list-style-type: none;
+    margin:15px 0px;
+    padding:0px;
+    height:auto;
+    width:auto;
+}
+
+#nav-bar ul{
+    margin:0px;
+    padding:0px 30px 0px 30px;
+    
+}
+#nav-bar {
+    width:220px;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+}
+#nav-bar h1{
+    margin-top:110px;
+    
+    text-align: center;
+}
+
+
+
+/*-------------Nav Bar section-----------------*/
+
+/*-------------Main section-----------------*/
+main{
+    margin-left:230px;
+    margin-top:130px;
+}
