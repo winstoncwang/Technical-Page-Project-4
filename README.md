@@ -46,3 +46,8 @@ Version 0.1.8
 Convert nav-bar to sidebar, header spaced out, content proper layout.
 
 --------------------------------------------------------
+ Version 0.2.1
+
+    Scrolling sidebar, fix header effect, anchor not added to pass certificate.
+    
+-------------------------------------------------------------------
