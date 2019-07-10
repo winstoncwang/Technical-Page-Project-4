@@ -51,3 +51,8 @@ Convert nav-bar to sidebar, header spaced out, content proper layout.
     Scrolling sidebar, fix header effect, anchor not added to pass certificate.
     
 -------------------------------------------------------------------
+Version 0.2.2
+
+    Update hover button effect
+
+-------------------------------------------------------------------
