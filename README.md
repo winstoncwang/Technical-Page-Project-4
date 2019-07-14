@@ -61,3 +61,8 @@ Version 0.2.3
     Update a-links effect, zindex for header, media query for smaller screen, font change, update external site links.
     
 -------------------------------------------------------------------
+Version 0.2.4
+
+    Updated scrollbar for the side navbar
+    
+-------------------------------------------------------------------

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <meta charset="utf-8">
     <title>Technical-Page-Project-4</title>
@@ -30,27 +31,31 @@
         </div>
     </header>
     
-    <nav id="nav-bar">
-        <header><h1>React Beginner Guide</h1></header>
-        <ul>
-            <li><a href="#getting_started">Getting Started</a></li>
-            <li><a href="#try_react">Try React</a></li>
-            <li><a href="#online_playgrounds">Online Playgrounds</a></li>
-            <li><a href="#add_react_to_a_website">Add React to a Website</a></li>
-            <li><a href="#create_a_new_react_app">Create a New React App</a></li>
-            <li><a href="#learn_react">Learn React</a></li>
-            <li><a href="#first_example">First Examples</a></li>
-            <li><a href="#react_for_beginners">React for Beginners</a></li>
-            <li><a href="#introducing_jsx">Introducing JSX</a></li>
-            <li><a href="#why_jsx">Why JSX?</a></li>
-            <li><a href="#embedding_expressions_in_jsx">Embedding Expressions in JSX</a></li>
-            <li><a href="#try_it_on_codepen">Try it on CodePen</a></li>
-            <li><a href="#jsx_is_an_expression_too">JSX is an Expression Too</a></li>
-            <li><a href="#specifying_attributes_with_jsx">Specifying Attributes with JSX</a></li>
-            <li><a href="#specifying_children_with_jsx">Specifying Children with JSX</a></li>
-            <li><a href="#jsx_prevents_injection_attacks">JSX Prevents Injection Attacks</a></li>
-        </ul>
-    </nav>
+
+    <div id="navbar-container">
+        <nav id="navbar">
+            <header><h1 style="margin: 50px 0px 50px 0px">React Beginner Guide</h1></header>
+            <ul>
+                <li><a href="#getting_started">Getting Started</a></li>
+                <li><a href="#try_react">Try React</a></li>
+                <li><a href="#online_playgrounds">Online Playgrounds</a></li>
+                <li><a href="#add_react_to_a_website">Add React to a Website</a></li>
+                <li><a href="#create_a_new_react_app">Create a New React App</a></li>
+                <li><a href="#learn_react">Learn React</a></li>
+                <li><a href="#first_example">First Examples</a></li>
+                <li><a href="#react_for_beginners">React for Beginners</a></li>
+                <li><a href="#introducing_jsx">Introducing JSX</a></li>
+                <li><a href="#why_jsx">Why JSX?</a></li>
+                <li><a href="#embedding_expressions_in_jsx">Embedding Expressions in JSX</a></li>
+                <li><a href="#try_it_on_codepen">Try it on CodePen</a></li>
+                <li><a href="#jsx_is_an_expression_too">JSX is an Expression Too</a></li>
+                <li><a href="#specifying_attributes_with_jsx">Specifying Attributes with JSX</a></li>
+                <li><a href="#specifying_children_with_jsx">Specifying Children with JSX</a></li>
+                <li><a href="#jsx_prevents_injection_attacks">JSX Prevents Injection Attacks</a></li>
+                <li><a href="#jsx_represents_objects">JSX Represents Objects</a></li>
+            </ul>
+        </nav>
+    </div>
     
     <main id="main-doc">
 
@@ -125,7 +130,7 @@
             <p>JSX produces React “elements”. We will explore rendering them to the DOM in the next section. Below, you can find the basics of JSX necessary to get you started.</p>
         </section>
         
-        <section id="why_jsx" class="main-section">
+        <section id="why_jsx?" class="main-section">
             <header><h2 style="font-size:40px">Why JSX?</h2></header>
             <p>React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.</p>
             <p>Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both. We will come back to components in a further section, but if you’re not yet comfortable putting markup in JS, this talk might convince you otherwise.</p>
@@ -267,7 +272,8 @@
             </p>
         </section>
         
-        <section class="main-section" id="jsx_reprents objects">
+        <section class="main-section" id="jsx_represents_objects">
+            <header><h2 style="font-size:40px">JSX Represents Objects</h2></header>
             <p>Babel compiles JSX down to <code>React.createElement()</code> calls.</p>
             <p>These two examples are identical:</p>
             <div class="code-container">
@@ -315,7 +321,7 @@
         </section>
 
     </main>
-    <footer style="height:150px;background-color:#E9B667;margin-left:400px; ">
+    <footer style="height:100px;background-color:#E9B667;margin-left:400px; ">
     
     </footer>
 </body>

@@ -2,7 +2,10 @@ html,body{
     margin:0px;
     padding:0px;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color:white;
+    height:auto;
 }
+
 
 /*-------------Header section-----------------*/
 .title-header{
@@ -12,7 +15,7 @@ html,body{
     position:fixed;
     top:0;
     left:0;
-    z-index:9999999;
+    z-index:999;
 }
 
 .css-width{
@@ -65,39 +68,43 @@ html,body{
 }
 /*-------------Header section-----------------*/
 /*-------------Nav Bar section-----------------*/
-#nav-bar ul li a{
+#navbar ul li a{
     text-decoration: none;
     color:lightslategrey;
 }
 
-#nav-bar ul li a:hover{
+#navbar ul li a:hover{
     color:black;
 }
 
-#nav-bar ul li{
+#navbar ul li{
     list-style-type: none;
-    margin:15px 0px 15px 45px;
+    margin:30px 40px 30px 40px;
+    text-align:left;
     padding:0px;
     height:auto;
     width:auto;
 }
 
-#nav-bar ul{
+#navbar ul{
     margin:0px;
     padding:0px 30px 0px 30px;
     
 }
-#nav-bar {
-    width:400px;
-    height:92.6%;
-    position:fixed;
-    left:0;
-    top:70px;
+#navbar {
+    height:calc(100% - 70px);
     overflow-x: hidden;
     overflow-y: scroll;
-    
+    margin-top:70px;
 }
-#nav-bar h1{
+#navbar-container{
+    width:400px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:100vh;
+}
+#navbar h1{
     margin-top:20px;
     
     text-align: center;
@@ -109,12 +116,13 @@ html,body{
 
 /*-------------Main section-----------------*/
 main{
+    
     margin-left:400px;
     padding-left:30px;
     padding-right:30px;
     margin-top:130px;
 }
-.main-section{
+.main-doc{
 }
 #main-doc p{
     margin: 30px 0px;
@@ -160,7 +168,7 @@ h2{
     align-items: center;
     width:auto;
     }
-    #nav-bar {
+    #navbar {
     width:300px;
     height:92.6%;
     position:fixed;
@@ -169,7 +177,7 @@ h2{
     overflow-x: hidden;
     overflow-y: scroll;
     }
-    #nav-bar ul li{
+    #navbar ul li{
     list-style-type: none;
     margin:15px 0px 15px 5px;
     padding:0px;
