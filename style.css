@@ -10,7 +10,7 @@ html,body{
 /*-------------Header section-----------------*/
 .title-header{
     width:100%;
-    background-color:#e9b567;
+    background-color:#618DFB ;
     height:70px;
     position:fixed;
     top:0;
@@ -32,6 +32,10 @@ html,body{
     flex-direction: row;
     align-items: center;
     width:calc(100%/3);
+}
+.grey-paragraph{
+    color:#6F6F6F;
+    opacity:0.8;
 }
 
 #search-form{
@@ -56,9 +60,9 @@ html,body{
     text-decoration: none;
     margin:6px;
     padding:5px;
-    color:dimgrey;
+    color:white;
     opacity:0.75;
-    background-color: #61DAFB;
+    background-color: black;
     border-radius:10px;
 }
 
@@ -133,7 +137,7 @@ main{
 main a{
     text-decoration:none;
     color:black;
-    background-color:#BCEFFD;
+    background-color:#affce6;
     opacity:0.8;
     border-bottom: 1px solid lightgrey;
     padding:2px 2px 2px 2px;
@@ -150,6 +154,21 @@ main a:hover{
 
 h2{
     margin:60px 0px 30px 0px;
+}
+
+code{
+    margin:10px auto;
+    padding:0px;
+    font-size:16px;
+    color:white;
+    text-align:center;
+    
+}
+
+pre{
+    border-radius:20px;
+    background-color:black;
+    margin-left:-25px;
 }
 
 /*----------mediaquery 800px or below-------------*/
