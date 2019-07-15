@@ -71,3 +71,13 @@ Version 0.2.5.1
     Add links and code sections
     
 ------------------------------------------------------------------
+Version 0.2.5.2
+
+    Added cubic bezier transtion effect on to links, changding code section.
+    
+------------------------------------------------------------------
+Version 0.2.5.3
+
+    Change code layout, fixed code format
+    
+------------------------------------------------------------------
