@@ -195,6 +195,17 @@ pre{
     padding:10px;
 }
 
+.purple-text{
+    color:#807085;
+}
+
+.brackets{
+    color:#7CB4AE;
+}
+
+.tag{
+    color:#CA7985;
+}
 /*----------mediaquery 800px or below-------------*/
 @media screen and (max-width:1000px){
     .css-width{
