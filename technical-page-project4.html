@@ -16,8 +16,8 @@
             </div>
             <div id="search-form">
                 <form class="search-form">
-                    <input type="text" id="search-input" name="search" placeholder="  Search keywords.." style="height:28.13px;padding:0px;margin:0px;border:0px;border-bottom-left-radius: 15px;border-top-left-radius: 15px;">
-                    <input class="hoverbutton" type="submit" id="search-button" name="search" value="Search" style="height:28.13px;margin:0px;padding:0px;border-top-right-radius:15px;border-bottom-right-radius:15px;">
+                    <input type="text" id="search-input" name="search" placeholder="  Search keywords.." >
+                    <input class="hoverbutton" type="submit" id="search-button" name="search" value="Search" >
                 </form>
             </div>
             <div id="feature-buttons-header">
@@ -34,70 +34,69 @@
 
     <div id="navbar-container">
         <nav id="navbar">
-            <header><h1 style="margin: 50px 0px 50px 0px">React Beginner Guide</h1></header>
+            <header><h1>React Beginner Guide</h1></header>
             <ul>
-                <li><a href="#getting_started">Getting Started</a></li>
-                <li><a href="#try_react">Try React</a></li>
-                <li><a href="#online_playgrounds">Online Playgrounds</a></li>
-                <li><a href="#add_react_to_a_website">Add React to a Website</a></li>
-                <li><a href="#create_a_new_react_app">Create a New React App</a></li>
-                <li><a href="#learn_react">Learn React</a></li>
-                <li><a href="#first_example">First Examples</a></li>
-                <li><a href="#react_for_beginners">React for Beginners</a></li>
-                <li><a href="#introducing_jsx">Introducing JSX</a></li>
-                <li><a href="#why_jsx">Why JSX?</a></li>
-                <li><a href="#embedding_expressions_in_jsx">Embedding Expressions in JSX</a></li>
-                <li><a href="#try_it_on_codepen">Try it on CodePen</a></li>
-                <li><a href="#jsx_is_an_expression_too">JSX is an Expression Too</a></li>
-                <li><a href="#specifying_attributes_with_jsx">Specifying Attributes with JSX</a></li>
-                <li><a href="#specifying_children_with_jsx">Specifying Children with JSX</a></li>
-                <li><a href="#jsx_prevents_injection_attacks">JSX Prevents Injection Attacks</a></li>
-                <li><a href="#jsx_represents_objects">JSX Represents Objects</a></li>
+                <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+                <li><a class="nav-link" href="#Try_React">Try React</a></li>
+                <li><a class="nav-link" href="#Online_Playgrounds">Online Playgrounds</a></li>
+                <li><a class="nav-link" href="#Add_React_to_a_Website">Add React to a Website</a></li>
+                <li><a class="nav-link" href="#Create_a_New_React_App">Create a New React App</a></li>
+                <li><a class="nav-link" href="#Learn_React">Learn React</a></li>
+                <li><a class="nav-link" href="#First_Examples">First Examples</a></li>
+                <li><a class="nav-link" href="#React_for_Beginners">React for Beginners</a></li>
+                <li><a class="nav-link" href="#Introducing_JSX">Introducing JSX</a></li>
+                <li><a class="nav-link" href="#Why_JSX?">Why JSX?</a></li>
+                <li><a class="nav-link" href="#Embedding_Expressions_in_JSX">Embedding Expressions in JSX</a></li>
+                <li><a class="nav-link" href="#Try_it_on_CodePen">Try it on CodePen</a></li>
+                <li><a class="nav-link" href="#JSX_is_an_Expression_Too">JSX is an Expression Too</a></li>
+                <li><a class="nav-link" href="#Specifying_Attributes_with_JSX">Specifying Attributes with JSX</a></li>
+                <li><a class="nav-link" href="#Specifying_Children_with_JSX">Specifying Children with JSX</a></li>
+                <li><a class="nav-link" href="#JSX_Prevents_Injection_Attacks">JSX Prevents Injection Attacks</a></li>
+                <li><a class="nav-link" href="#JSX_Represents_Objects">JSX Represents Objects</a></li>
             </ul>
         </nav>
     </div>
     
     <main id="main-doc">
 
-        <section id="getting_started" class="main-section">
-            
+        <section id="Getting_Started" class="main-section">
             <header><h1 style="font-size:70px">Getting Started</h1></header>
             <p class="grey-paragraph">This page is an overview of the React documentation and related resources.</p>
-            <p>React is a JavaScript library for building user interfaces. Learn what React is all about on <a class="info-link" href="https://reactjs.org/">our homepage</a> or <a class="info-link" href="https://reactjs.org/tutorial/tutorial.html">in the tutorial</a>.</p>
+            <p>React is a JavaScript library for building user interfaces. Learn what React is all about on <a class="info-link wrapping" href="https://reactjs.org/">our homepage</a> or <a class="info-link wrapping" href="https://reactjs.org/tutorial/tutorial.html">in the tutorial</a>.</p>
             <ul style="border-top: 1px solid lightgrey;border-bottom:1px solid lightgrey; padding:20px 30px;;">
                 <li><a href="https://reactjs.org/docs/getting-started.html#try-react">Try React</a></li>
-                <li><a>Learn React</a></li>
-                <li><a>Staying Informed</a></li>
-                <li><a>Versioned Documentation</a></li>
-                <li><a>Something Missing?</a></li>
+                <li><a href="https://reactjs.org/docs/getting-started.html#learn-react">Learn React</a></li>
+                <li><a href="https://reactjs.org/docs/getting-started.html#staying-informed">Staying Informed</a></li>
+                <li><a href="https://reactjs.org/docs/getting-started.html#versioned-documentation" class="wrapping">Versioned Documentation</a></li>
+                <li><a href="https://reactjs.org/docs/getting-started.html#something-missing">Something Missing?</a></li>
             </ul>
         </section>
 
-        <section id="try_react" class="main-section">
+        <section id="Try_React" class="main-section">
             <header><h2 style="font-size:40px">Try React</h2></header>
             <p>React has been designed from the start for gradual adoption, and <strong>you can use as little or as much React as you need.</strong> Whether you want to get a taste of React, add some interactivity to a simple HTML page, or start a complex React-powered app, the links in this section will help you get started.</p>
         </section>
 
-        <section id="online_playgrounds" class="main-section">
+        <section id="Online_Playgrounds" class="main-section">
             <header><h2 style="font-size:40px">Online Playgrounds</h2></header>
             <p>If you're interested in playing around with React, you can use an online code playground. Try a Hello World template on <a>CodePen</a>, <a>CodeSandbox</a>, or <a>Glitch</a>.</p>
-            <p>If you prefer to use your own text editor, you can also <a>download this HTML file</a>, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we’d only recommend using this for simple demos.</p>
+            <p>If you prefer to use your own text editor, you can also <a class="wrapping">download this HTML file</a>, edit it, and open it from the local filesystem in your browser. It does a slow runtime code transformation, so we&apos;d only recommend using this for simple demos.</p>
         </section>
 
-        <section id="add_react_to_a_website" class="main-section">
+        <section id="Add_React_to_a_Website" class="main-section">
             <header><h2 style="font-size:40px">Add React to a Website</h2></header>
-            <p>You can <a>add React to an HTML page in one minute</a>. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.</p>
+            <p>You can <a class="wrapping">add React to an HTML page in one minute</a>. You can then either gradually expand its presence, or keep it contained to a few dynamic widgets.</p>
         </section>
 
-        <section id="create_a_new_react_app" class="main-section">
+        <section id="Create_a_New_React_App" class="main-section">
             <header><h2 style="font-size:40px">Create a New React App</h2></header>
-            <p>When starting a React project, <a>a simple HTML page with script tags</a> might still be the best option. It only takes a minute to set up!</p>
-            <p>As your application grows, you might want to consider a more integrated setup. There are <a>several JavaScript toolchains</a> we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem.</p>
+            <p>When starting a React project, <a class="wrapping">a simple HTML page with script tags</a> might still be the best option. It only takes a minute to set up!</p>
+            <p>As your application grows, you might want to consider a more integrated setup. There are <a class="wrapping">several JavaScript toolchains</a> we recommend for larger applications. Each of them can work with little to no configuration and lets you take full advantage of the rich React ecosystem.</p>
         </section>
 
-        <section id="learn_react" class="main-section">
+        <section id="Learn_React" class="main-section">
             <header><h2 style="font-size:40px">Learn React</h2></header>
-            <p>People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you’ll find this section helpful.</p>
+            <p>People come to React from different backgrounds and with different learning styles. Whether you prefer a more theoretical or a practical approach, we hope you&apos;ll find this section helpful.</p>
             <ul>
                 <li>If you prefer to <strong>learn by doing</strong>, start with our <a>practical tutorial</a>.</li>
                 <li>If you prefer to <strong>learn concepts step by step</strong>, start with our <a>a guide to main concepts</a>.</li>
@@ -105,17 +104,17 @@
             <p>Like any unfamiliar technology, React does have a learning curve. With practice and some patience, you will get the hang of it.</p>
         </section>
 
-        <section id="first_example" class="main-section">
+        <section id="First_Examples" class="main-section">
             <header><h2 style="font-size:40px">First Examples</h2></header>
-            <p>The <a>React homepage</a> contains a few small React examples with a live editor. Even if you don’t know anything about React yet, try changing their code and see how it affects the result.</p>
+            <p>The <a>React homepage</a> contains a few small React examples with a live editor. Even if you don&apos;t know anything about React yet, try changing their code and see how it affects the result.</p>
         </section>
 
-        <section id="react_for_beginners" class="main-section">
+        <section id="React_for_Beginners" class="main-section">
             <header><h2 style="font-size:40px">React for Beginners</h2></header>
             <p>If you feel that the React documentation goes at a faster pace than you're comfortable with, check out <a>this overview of React by Tania Rascia</a>. It introduces the most important React concepts in a detailed, beginner-friendly way. Once you're done, give the documentation another try!</p>
         </section>
         
-        <section id="introducing_jsx" class="main-section">
+        <section id="Introducing_JSX" class="main-section">
             <header><h2 style="font-size:40px">Introducing JSX</h2></header>
             <p class="grey-paragraph">Consider this variable declaration:</p>
             <div class="code-container">
@@ -128,15 +127,15 @@
             <p>JSX produces React “elements”. We will explore rendering them to the DOM in the next section. Below, you can find the basics of JSX necessary to get you started.</p>
         </section>
         
-        <section id="why_jsx?" class="main-section">
+        <section id="Why_JSX?" class="main-section">
             <header><h2 style="font-size:40px">Why JSX?</h2></header>
             <p>React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.</p>
-            <p>Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both. We will come back to components in a further section, but if you’re not yet comfortable putting markup in JS, this talk might convince you otherwise.</p>
-            <p>React doesn’t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.</p>
-            <p>With that out of the way, let’s get started!</p>
+            <p>Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with loosely coupled units called “components” that contain both. We will come back to components in a further section, but if you&apos;re not yet comfortable putting markup in JS, this talk might convince you otherwise.</p>
+            <p>React doesn&apos;t require using JSX, but most people find it helpful as a visual aid when working with UI inside the JavaScript code. It also allows React to show more useful error and warning messages.</p>
+            <p>With that out of the way, let&apos;s get started!</p>
         </section>
         
-        <section id="embedding_expressions_in_jsx" class="main-section">
+        <section id="Embedding_Expressions_in_JSX" class="main-section">
             <header><h2 style="font-size:40px">Embedding Expressions in JSX</h2></header>
             <p>In the example below, we declare a variable called <code class="grey-paragraph">name</code> and then use it inside JSX by wrapping it in curly braces:</p>
             <div class="code-container">
@@ -183,12 +182,12 @@
             
         </section>
         
-        <section id="try_it_on_codepen" class="main-section">
+        <section id="Try_it_on_CodePen" class="main-section">
             <header><h2 style="font-size:40px">Try it on CodePen</h2></header>
-            <p>We split JSX over multiple lines for readability. While it isn’t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.</p>
+            <p>We split JSX over multiple lines for readability. While it isn&apos;t required, when doing this, we also recommend wrapping it in parentheses to avoid the pitfalls of automatic semicolon insertion.</p>
         </section>
         
-        <section id="jsx_is_an_expression_too" class="main-section">
+        <section id="JSX_is_an_Expression_Too" class="main-section">
             <header><h2 style="font-size:40px">JSX is an Expression Too</h2></header>
             <p>After compilation, JSX expressions become regular JavaScript function calls and evaluate to JavaScript objects.</p>
             <p>This means that you can use JSX inside of <code class="grey-paragraph">if</code> statements and <code class="grey-paragraph">for</code> loops, assign it to variables, accept it as arguments, and return it from functions:</p>
@@ -206,7 +205,7 @@
             </div>
         </section>
         
-        <section class="main-section" id="specifying_attributes_with_jsx">
+        <section id="Specifying_Attributes_with_JSX" class="main-section" >
             <header><h2 style="font-size:40px">Specifying Attributes with JSX</h2></header>
             <p>You may use quotes to specify string literals as attributes:</p>
             <div class="code-container">
@@ -224,7 +223,7 @@
                     </code>
                 </pre>
             </div>
-            <p>Don’t put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.</p>
+            <p>Don&apos;t put quotes around curly braces when embedding a JavaScript expression in an attribute. You should either use quotes (for string values) or curly braces (for expressions), but not both in the same attribute.</p>
             <blockquote>
                 <strong>Warning:</strong>
                 <p>Since JSX is closer to JavaScript than to HTML, React DOM uses <code class="grey-paragraph">camelCase</code> property naming convention instead of HTML attribute names.</p>
@@ -232,7 +231,7 @@
             </blockquote>
         </section>
         
-        <section class="main-section" id="specifying_children_with_jsx">
+        <section id="Specifying_Children_with_JSX" class="main-section" >
             <header><h2 style="font-size:40px">Specifying Children with JSX </h2></header>
             <p>If a tag is empty, you may close it immediately with <code class="grey-paragraph">&#92;&#62;</code>, like XML:</p>
             <div class="code-container">
@@ -256,7 +255,7 @@
             </div>
         </section>
         
-        <section class="main-section" id="jsx_prevents_injection_attacks">
+        <section id="JSX_Prevents_Injection_Attacks" class="main-section" >
             <header><h2 style="font-size:40px">JSX Prevents Injection Attacks</h2></header>
             <p>It is safe to embed user input in JSX:</p>
             <div class="code-container">
@@ -269,11 +268,11 @@
                     </code>
                 </pre>
             </div>
-            <p>By default, React DOM escapes any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that’s not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent XSS (cross-site-scripting) attacks.
+            <p>By default, React DOM escapes any values embedded in JSX before rendering them. Thus it ensures that you can never inject anything that&#39;s not explicitly written in your application. Everything is converted to a string before being rendered. This helps prevent XSS (cross-site-scripting) attacks.
             </p>
         </section>
         
-        <section class="main-section" id="jsx_represents_objects">
+        <section id="JSX_Represents_Objects" class="main-section">
             <header><h2 style="font-size:40px">JSX Represents Objects</h2></header>
             <p>Babel compiles JSX down to <code class="grey-paragraph">React.createElement()</code> calls.</p>
             <p>These two examples are identical:</p>
@@ -315,15 +314,15 @@
                     </code>
                 </pre>
             </div>
-            <p>These objects are called “React elements”. You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.</p>
+            <p>These objects are called &quot;React elements&quot;. You can think of them as descriptions of what you want to see on the screen. React reads these objects and uses them to construct the DOM and keep it up to date.</p>
             <p>We will explore rendering React elements to the DOM in the next section.</p>
             <blockquote>
                 <strong>Tip:</strong>
-                <p>We recommend using the “Babel” language definition for your editor of choice so that both ES6 and JSX code is properly highlighted. This website uses the Oceanic Next color scheme which is compatible with it.</p></blockquote>
+                <p>We recommend using the &quot;Babel&quot; language definition for your editor of choice so that both ES6 and JSX code is properly highlighted. This website uses the Oceanic Next color scheme which is compatible with it.</p></blockquote>
         </section>
 
     </main>
-    <footer style="height:100px;background-color:#618DFB;margin-left:400px; ">
+    <footer>
     
     </footer>
 </body>
