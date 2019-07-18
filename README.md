@@ -81,3 +81,23 @@ Version 0.2.5.3
     Change code layout, fixed code format
     
 ------------------------------------------------------------------
+Update readme.md V0.2.5.3
+
+    Read doc for more detail
+
+-------------------------------------------------------------------
+Version 0.2.5.4
+
+    Coloured <code> section according to the original document.
+
+-------------------------------------------------------------------
+Version 0.2.6
+
+    Update blockquote, navbar with media query. Changed font size
+    
+-------------------------------------------------------------------
+Version 0.2.7
+
+    add responsive web features, corrected overall layout, responsive header and side nav-bar, user story fulfilled
+    
+-------------------------------------------------------------------
