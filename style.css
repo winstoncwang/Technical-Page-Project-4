@@ -206,7 +206,15 @@ pre{
 .tag{
     color:#CA7985;
 }
-/*----------mediaquery 800px or below-------------*/
+
+blockquote{
+    background-color:grey;
+    padding:8%;
+    color:white;
+    border-radius:25px;
+    margin:40px 0px;
+}
+/*----------mediaquery 1000px or below-------------*/
 @media screen and (max-width:1000px){
     .css-width{
     width:inherit;
@@ -224,10 +232,10 @@ pre{
     }
     #navbar {
     width:300px;
-    height:92.6%;
+    height:calc(100vh - 70px);
     position:fixed;
     left:0;
-    top:70px;
+    top:0;
     overflow-x: hidden;
     overflow-y: scroll;
     }
@@ -240,6 +248,48 @@ pre{
     }
     main{
     margin-left:300px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:130px;
+    }
+}
+/*----------mediaquery 830px or below-------------*/
+@media screen and (max-width:830px){
+    .css-width{
+    width:inherit;
+    height: inherit;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    }
+    .logo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:auto;
+    }
+    #navbar {
+    width:200px;
+    height:calc(100vh - 70px);
+    position:fixed;
+    left:0;
+    top:0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    }
+    #navbar ul li{
+    list-style-type: none;
+    margin:15px 0px 15px 5px;
+    padding:0px;
+    height:auto;
+    width:auto;
+    }
+    #navbar ul li a{
+    font-size:13px;
+    }
+    main{
+    margin-left:200px;
     padding-left:20px;
     padding-right:20px;
     margin-top:130px;
